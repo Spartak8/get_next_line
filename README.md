@@ -123,5 +123,3 @@ Claude (Anthropic) was used throughout this project in the following ways:
 - **Code review** — checking for memory leaks, norminette compliance, and edge cases
 - **Debugging guidance** — identifying issues such as uninitialized variables, missing NULL checks, and incorrect casts
 - **README writing** — structuring and writing this document
-
-All code was written by the student; AI was used as a learning and review tool, not to generate final solutions.
