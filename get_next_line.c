@@ -6,7 +6,7 @@
 /*   By: skhachat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 19:34:42 by skhachat          #+#    #+#             */
-/*   Updated: 2026/02/22 10:03:04 by skhachat         ###   ########.fr       */
+/*   Updated: 2026/02/22 13:49:56 by skhachat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static char	*readf(int fd, char *remainder)
 {
 	ssize_t		bytes;
 	char		*buf;
-	
+
 	buf = malloc(BUFFER_SIZE + 1);
 	if (!buf)
 		return (remainder);
@@ -108,4 +108,4 @@ char	*get_next_line(int fd)
 	}
 	close(fd);
 	return (0);
-}
+}*/

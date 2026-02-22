@@ -6,7 +6,7 @@
 /*   By: skhachat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 19:34:46 by skhachat          #+#    #+#             */
-/*   Updated: 2026/02/22 08:32:49 by skhachat         ###   ########.fr       */
+/*   Updated: 2026/02/22 13:31:35 by skhachat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #  define BUFFER_SIZE 42
 # endif
 
+# include <fcntl.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -26,6 +27,5 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strjoin(char *str1, char *str2);
 char	*ft_strdup(const char *str);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
-
 
 #endif
