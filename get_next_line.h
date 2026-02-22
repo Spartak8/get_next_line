@@ -6,12 +6,12 @@
 /*   By: skhachat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 19:34:46 by skhachat          #+#    #+#             */
-/*   Updated: 2026/02/22 13:31:35 by skhachat         ###   ########.fr       */
+/*   Updated: 2026/02/22 16:34:37 by skhachat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H 
+# define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42

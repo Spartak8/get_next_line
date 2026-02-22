@@ -14,8 +14,6 @@ The goal of this project is to understand and implement:
 
 The bonus part extends the function to handle multiple file descriptors simultaneously.
 
----
-
 ## Instructions
 
 ### Files
