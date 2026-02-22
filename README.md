@@ -114,7 +114,7 @@ This approach reads as little as possible — we stop as soon as we find `\n`. T
 
 - [read() man page](https://man7.org/linux/man-pages/man2/read.2.html)
 - [Static variables in C — GeeksForGeeks](https://www.geeksforgeeks.org/static-variables-in-c/)
-- [Memory management in C — Valgrind docs](httpss://valgrind.org/docs/manual/quick-start.html)
+- [Memory management in C — Valgrind docs](https://valgrind.org/docs/manual/quick-start.html)
 
 ### AI Usage
 
