@@ -6,7 +6,7 @@
 /*   By: skhachat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 19:34:46 by skhachat          #+#    #+#             */
-/*   Updated: 2026/02/22 16:34:37 by skhachat         ###   ########.fr       */
+/*   Updated: 2026/02/23 18:16:47 by skhachat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 42
+#  define BUFFER_SIZE 67
 # endif
 
 # include <fcntl.h>

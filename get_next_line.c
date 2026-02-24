@@ -6,7 +6,7 @@
 /*   By: skhachat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 19:34:42 by skhachat          #+#    #+#             */
-/*   Updated: 2026/02/22 13:49:56 by skhachat         ###   ########.fr       */
+/*   Updated: 2026/02/24 17:14:45 by skhachat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,14 @@ static char	*readf(int fd, char *remainder)
 	while (!ft_strchr(remainder, '\n'))
 	{
 		bytes = read(fd, buf, BUFFER_SIZE);
-		if (bytes <= 0)
+		if (bytes == 0)
 			break ;
+		if (bytes < 0)
+		{
+			free(remainder);
+			free(buf);
+			return (NULL);
+		}
 		buf[bytes] = '\0';
 		remainder = ft_strjoin(remainder, buf);
 		if (!remainder)
@@ -94,18 +100,3 @@ char	*get_next_line(int fd)
 	}
 	return (line);
 }
-
-/*int	main(void)
-{
-	int		fd;
-	char	*line;
-
-	fd = open("test.txt", O_RDONLY);
-	while ((line = get_next_line(fd)) != NULL)
-	{
-		printf("%s", line);
-		free(line);
-	}
-	close(fd);
-	return (0);
-}*/

@@ -55,8 +55,14 @@ static char	*readf(int fd, char *remainder)
 	while (!ft_strchr(remainder, '\n'))
 	{
 		bytes = read(fd, buf, BUFFER_SIZE);
-		if (bytes <= 0)
+		if (bytes == 0)
 			break ;
+		if (bytes < 0)
+		{
+			free(remainder);
+			free(buf);
+			return (NULL);
+		}
 		buf[bytes] = '\0';
 		remainder = ft_strjoin(remainder, buf);
 		if (!remainder)
@@ -68,7 +74,7 @@ static char	*readf(int fd, char *remainder)
 
 char	*get_next_line(int fd)
 {
-	static char	*remainder[OPEN_MAX];
+	static char	*remainder[1024];
 	char		*line;
 	char		*temp;
 
